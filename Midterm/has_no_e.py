@@ -1,7 +1,7 @@
 #! python function has_no_e
 
-for c in gadsby.txt
-	print (c)
+for e in gadsby.txt
+	print (e)
 else print false
 return 0
 	
