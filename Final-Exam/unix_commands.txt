@@ -4,8 +4,12 @@
 # except the two header lines?
 # Enter the relevant Unix command(s) used below.
 
+$ tail -130 classlist.csv
 
-
+# here I looked into the file to see that there are 132 lines. 
+# because the first two header lines are not supposed to be read,
+# i used tail -130 to read the 130 lines starting from the bottom
+# therefore not including the first two lines.
 
 # part (b)
 # How would you construct a pipeline using the command from part (a)
@@ -14,7 +18,10 @@
 # of students in the list.
 
 
+$ wc -l | tail -130 classlist.csv
 
+## here i would try and make a pipeline that counts the number of lines there is in the file therefore
+# the number of distinct students in the class.
 
 # part (c)
 # How would you sort the list by the second column (i.e., by
@@ -26,6 +33,7 @@
 
 
 
+sort lengths | head -1
 
 # part (d)
 # Construct a Unix pipeline involving these functions to determine
